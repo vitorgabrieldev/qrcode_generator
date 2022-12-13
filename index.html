@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <!-- --- * --- Title Website --- * --- -->
+        <title>Gerador de QrCode</title>
+        <!-- --- * --- Require Meta Tags --- * --- -->
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- --- * --- Fonts --- * --- -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&amp;display=swap"/>
+        <!-- --- * --- Style Sheets --- * --- -->
+        <link rel="stylesheet" href="./style.css"/>
+        <!-- --- * --- Ajax --- * --- -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="box">
+        <h1>Gerador de QrCode</h1>
+        <hr>
+        <div class="sqrcode"></div>
+        <div class="qrcode"></div>
+        <input type="text" placeholder="Digite sua URL aqui..." onchange="generateQr()"/>
+      </div>
+    </div>
+
+    <!-- --- * --- Scripts --- * --- -->
+    <script src="./app.js"></script>
+  </body>
+</html>
